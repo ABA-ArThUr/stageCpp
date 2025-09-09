@@ -71,10 +71,10 @@ mission::mission(const mission& miss)
  * \param entre Objet de type mission
  * \return Nouvelle objet de type mission
  */
-mission::operator=(const mission& miss)
+mission &mission::operator=(const mission& miss)
 {
     cout << "Affectation de la mission" << std::endl;
-    if (this != & entre)  // Pour éviter que l'on ne se recopie pas...
+    if (this != &miss)  // Pour éviter que l'on ne se recopie pas...
     {
 		this->nbPersonne = miss.nbPersonne;
 		this->descriptifMission = miss.descriptifMission;
