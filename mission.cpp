@@ -113,3 +113,30 @@ std::string mission::getNbHeure()
 {
 	return this->nbHeure;
 }
+
+/**
+ * \brief Mutateur de l'attribut nbPersonne
+ *
+ * \param nouveauNbPersonne nouveau nombre de personnes pour la mission
+ */
+void  mission::setNbPersonne(std::string nouveauNbPersonne) {
+	this->nbPersonne = nouveauNbPersonne;
+}
+
+/**
+ * \brief Mutateur de l'attribut descriptifMission
+ *
+ * \param nouveauDescriptifMission nouveau descriptif de la mission
+ */
+void  mission::setDescriptifMission(std::string nouveauDescriptifMission) {
+	this->descriptifMission = nouveauDescriptifMission;
+}
+
+/**
+ * \brief Mutateur de l'attribut nbHeure
+ *
+ * \param nouveauNbHeure nouveau nombre d'heures de la mission
+ */
+void  mission::setNbHeure(std::string nouveauNbHeure) {
+	this->nbHeure = nouveauNbHeure;
+}
