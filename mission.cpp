@@ -1,6 +1,6 @@
 /*****************************************************************//**
- * \file   Entreprise.cpp
- * \brief  Definition de la classe Entreprise
+ * \file   mission.cpp
+ * \brief  Definition de la classe mission
  *
  * \author arthur
  * \version 0.1
@@ -51,3 +51,35 @@ mission::~mission() {
 	cout << "Destrcution de l'entreprise " << this->nbPersonne << " " << this->descriptifMission << " " << this->nbHeure << endl;
 
 }
+
+/**
+ * \brief Constructeur de copie
+ *
+ * \param entre Objet de type mission
+ */
+mission::mission(const mission& miss)
+{
+    cout << "Copie de Capitaine" << endl;
+	this->nbPersonne = miss.nbPersonne;
+	this->descriptifMission = miss.descriptifMission;
+	this->nbHeure = miss.nbHeure;
+}
+
+/**
+ * \brief Operateur d'affectation
+ *
+ * \param entre Objet de type mission
+ * \return Nouvelle objet de type mission
+ */
+mission::operator=(const mission& miss)
+{
+    cout << "Affectation de la mission" << std::endl;
+    if (this != &entre)  // Pour éviter que l'on ne se recopie pas...
+    {
+		this->nbPersonne = miss.nbPersonne;
+		this->descriptifMission = miss.descriptifMission;
+		this->nbHeure = miss.nbHeure;
+    }
+    return *this;
+}
+
