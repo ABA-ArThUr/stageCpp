@@ -48,7 +48,7 @@ mission::mission(std::string personne, std::string mission, std::string heure) {
  */
 mission::~mission() {
 
-	cout << "Destrcution de l'entreprise " << this->nbPersonne << " " << this->descriptifMission << " " << this->nbHeure << endl;
+	cout << "Destrcution de la mission" << this->nbPersonne << " " << this->descriptifMission << " " << this->nbHeure << endl;
 
 }
 
