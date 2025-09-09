@@ -8,7 +8,7 @@ int main() {
     std::cout << "Nom de l'entreprise : " << maSuperEntre.getNomEntreprise() << std::endl;
     std::cout << "Ville de l'entreprise : " << maSuperEntre.getVilleEntreprise() << std::endl;
 
-    // Modification des attributs privés via les méthodes publiques
+    // Modification des attributs 
     maSuperEntre.setEntreprise("lesBTSciel");
     maSuperEntre.setVilleEntreprise("guer");
     std::cout << "Nom modifie : " << maSuperEntre.getNomEntreprise() << std::endl;
@@ -20,7 +20,7 @@ int main() {
     std::cout << "Descriptif : " << mamission.getDescriptifMission() << std::endl;
     std::cout << "Nombre d'heures : " << mamission.getNbHeure() << std::endl;
 
-    // Modification des attributs privés via les méthodes publiques
+    // Modification des attributs 
     mamission.setNbPersonne("13");
     mamission.setDescriptifMission("apprendre le c++");
     mamission.setNbHeure("8");
