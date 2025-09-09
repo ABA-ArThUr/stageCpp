@@ -9,7 +9,7 @@
  * Programme Cpp permettant de creer des objets pour décrire les missions
  *********************************************************************/
 
-#include "entreprise.h"
+#include "mission.h"
 
 
 
@@ -21,7 +21,7 @@ using namespace std;
  * \li descriptifMission = inconnu
  * \li nbHeure = inconnu
  */
-Entreprise::Entreprise() {
+mission::mission() {
 
 	this->nbPersonne = "inconnu";
 	this->descriptifMission = "inconnu";
@@ -35,8 +35,19 @@ Entreprise::Entreprise() {
  * \param descriptif de la mission
  * \param nombre d'heures de la mission
  */
-Entreprise::Entreprise(std::string personne, std::string mission, std::string heure) {
+mission::mission(std::string personne, std::string mission, std::string heure) {
 	this->nbPerssone = personne;
 	this->descriptifMission = mission;
 	this->nbHeure = heure;
+}
+
+
+/**
+ * \brief Destructeur
+ *
+ */
+mission::~mission() {
+
+	cout << "Destrcution de l'entreprise " << this->nbPersonne << " " << this->descriptifMission << " " << this->nbHeure << endl;
+
 }
