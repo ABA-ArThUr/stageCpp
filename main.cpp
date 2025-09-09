@@ -15,3 +15,15 @@
 
 using namespace std;
 
+/**
+ * \brief Constructeur par default
+ * \li nbPersonne = inconnu
+ * \li descriptifMission = inconnu
+ * \li nbHeure = inconnu
+ */
+Entreprise::Entreprise() {
+
+	this->nbPersonne = "inconnu";
+	this->descriptifMission = "inconnu";
+	this->nbHeure = "inconnu";
+}
