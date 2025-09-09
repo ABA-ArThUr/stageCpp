@@ -83,3 +83,33 @@ mission::operator=(const mission& miss)
     return *this;
 }
 
+/**
+ * \brief Accesseur de l'attribut nbPersonne
+ *
+ * \return nombre de personnes pour la mission
+ */
+std::string mission::getNbPersonne()
+{
+	return this->nbPersonne;
+}
+
+/**
+ * \brief Accesseur de l'attribut descriptifMission
+ *
+ * \return descriptif de la mission
+ */
+std::string mission::getDescriptifMission()
+{
+	return this->descriptifMission;
+}
+
+
+/**
+ * \brief Accesseur de l'attribut nbHeure
+ *
+ * \return nombre d'heures de la mission
+ */
+std::string mission::getNbHeure()
+{
+	return this->nbHeure;
+}
