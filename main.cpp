@@ -27,3 +27,16 @@ Entreprise::Entreprise() {
 	this->descriptifMission = "inconnu";
 	this->nbHeure = "inconnu";
 }
+
+/**
+ * \brief Constructeur avec parametres rentres en argument
+ *
+ * \param nombre de personnes pour la mission
+ * \param descriptif de la mission
+ * \param nombre d'heures de la mission
+ */
+Entreprise::Entreprise(std::string personne, std::string mission, std::string heure) {
+	this->nbPerssone = personne;
+	this->descriptifMission = mission;
+	this-> nbHeure = heure;
+}
