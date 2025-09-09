@@ -36,7 +36,7 @@ mission::mission() {
  * \param nombre d'heures de la mission
  */
 mission::mission(std::string personne, std::string mission, std::string heure) {
-	this->nbPerssone = personne;
+	this->nbPersonne = personne;
 	this->descriptifMission = mission;
 	this->nbHeure = heure;
 }
@@ -74,7 +74,7 @@ mission::mission(const mission& miss)
 mission::operator=(const mission& miss)
 {
     cout << "Affectation de la mission" << std::endl;
-    if (this != &entre)  // Pour éviter que l'on ne se recopie pas...
+    if (this != & entre)  // Pour éviter que l'on ne se recopie pas...
     {
 		this->nbPersonne = miss.nbPersonne;
 		this->descriptifMission = miss.descriptifMission;
