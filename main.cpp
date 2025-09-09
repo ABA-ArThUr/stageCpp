@@ -15,7 +15,7 @@ int main() {
     std::cout << "Ville modifiee : " << maSuperEntre.getVilleEntreprise() << std::endl;
 
     // Création d'une mission avec le constructeur paramétré
-    mission mamission("5", "Développement logiciel cyber", "40");
+    mission mamission("5", "Developpement logiciel cyber", "40");
     std::cout << "Nombre de personnes : " << mamission.getNbPersonne() << std::endl;
     std::cout << "Descriptif : " << mamission.getDescriptifMission() << std::endl;
     std::cout << "Nombre d'heures : " << mamission.getNbHeure() << std::endl;
