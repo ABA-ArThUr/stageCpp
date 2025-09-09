@@ -6,8 +6,6 @@
 * \date   september 2025
 * ********************************************************************/
 
-#ifndef ENTREPRISE_H
-#define ENTREPRISE_H
 #define mission_H
 #ifndef MISSION_H
 #include <iostream>
